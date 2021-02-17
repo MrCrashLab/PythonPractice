@@ -40,7 +40,7 @@ def f21(x):
 def f22(x):
     str_bin = str(bin(x))[2:]
     if len(str_bin) < 32:
-        str_bin = '0' * (len(str_bin) - 32) + str_bin
+        str_bin = '0' * (32 - len(str_bin)) + str_bin
     a_str_bin = str_bin[-15:]
     b_str_bin = str_bin[-29:-15]
     c_str_bin = str_bin[:-29]
