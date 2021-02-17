@@ -52,19 +52,19 @@ def f22(x):
 
 def f23(x):
     res = []
-    tmparr = []
+    tmp_arr = []
     for i in range(len(x)):
         while None in x[i]:
             x[i].remove(None)
-        tmparr.append(list())
+        tmp_arr.append(list())
         for tmp in x[i]:
-            if tmp not in tmparr[i]:
-                tmparr[i].append(tmp)
+            if tmp not in tmp_arr[i]:
+                tmp_arr[i].append(tmp)
         res.append(list())
-        res[i].append(int(tmparr[i][0].split(':')[1][:-1]) / 100)
-        res[i].append(tmparr[i][0].split(':')[0][5:])
-        res[i].append(tmparr[i][1].replace('-', '.'))
-        res[i].append(tmparr[i][2].split(' ')[1].split('.')[0] + '. ' + tmparr[i][2].split(' ')[0])
+        res[i].append(int(tmp_arr[i][0].split(':')[1][:-1]) / 100)
+        res[i].append(tmp_arr[i][0].split(':')[0][5:])
+        res[i].append(tmp_arr[i][1].replace('-', '.'))
+        res[i].append(tmp_arr[i][2].split(' ')[1].split('.')[0] + '. ' + tmp_arr[i][2].split(' ')[0])
     return res
 
 
