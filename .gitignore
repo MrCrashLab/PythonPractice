@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+my_venv
+.idea
+Practice_03/__pycache__
+Practice_03/test.py
