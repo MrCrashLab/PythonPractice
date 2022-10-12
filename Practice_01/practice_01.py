@@ -1,6 +1,8 @@
 from math import log, sin, tan, exp
 
 
+
+
 def f11(x, y, z):
     return (53 * z ** 2 - sin(z) - 77) / (90 * z ** 8 - 17 * z ** 5 - 89) + \
            log(40 * z) + y ** 3 - \
